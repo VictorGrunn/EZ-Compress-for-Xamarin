@@ -36,7 +36,8 @@ namespace EZCompress1.Plugin
               var finalStream = newResult.AsStream();
 
               finalStream.Position = 0;
-
+              
+              System.Diagnostics.Debug.WriteLine("Compression succeeded!");
               return (MemoryStream)finalStream;
           }
       }
